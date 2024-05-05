@@ -65,3 +65,8 @@ main div {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+main button {
+    width: 100px;
+    margin: 10px;
+}
