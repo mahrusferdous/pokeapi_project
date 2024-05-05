@@ -66,9 +66,11 @@ main div {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-main button {
+#btn1,
+#btn2 {
     width: 100px;
     margin: 10px;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 991px) {
