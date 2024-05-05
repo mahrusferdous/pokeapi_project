@@ -1,5 +1,5 @@
 async function getPokemonData(query) {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${query}`);
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${query.toLowerCase()}`);
     const data = await response.json();
     return data;
 }
