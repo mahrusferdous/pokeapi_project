@@ -13,7 +13,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         />
-        <link rel="stylesheet" href="static/styles.css" />
+        <link rel="stylesheet" href="static/search.css" />
         <script src="static/main.js"></script>
         <title>Homepage</title>
     </head>
@@ -39,6 +39,40 @@
                 </div>
             </nav>
         </header>
+
+        <main class="container">
+            <form
+                class="d-flex justify-content-center flex-column align-items-center"
+                action="POST"
+                onsubmit="fetchData(event)"
+            >
+                <input
+                    id="pokemonName"
+                    name="pokemonName"
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Pokémon's name or ID"
+                    aria-label=".form-control-lg example"
+                    required
+                />
+                <div>
+                    <button class="btn btn-primary mt-3 mx-3 px-2" type="submit">Search</button>
+                    <button
+                        onclick="resetButton()"
+                        class="btn btn-primary mt-3 mx-3 px-3"
+                        type="reset"
+                    >
+                        Reset
+                    </button>
+                </div>
+            </form>
+
+            <div>
+                <div>
+                    <div id="pokemonContainer"></div>
+                </div>
+            </div>
+        </main>
 
         <footer>
             <div class="mb-12 py-3 text-center bg-dark">
