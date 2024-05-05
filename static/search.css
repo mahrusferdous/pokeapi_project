@@ -71,6 +71,7 @@ main div {
     width: 100px;
     margin: 10px;
     font-weight: 600;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 991px) {
