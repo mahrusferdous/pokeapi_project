@@ -31,3 +31,11 @@ footer {
     color: white;
     text-align: center;
 }
+
+@media screen and (max-width: 991px) {
+    #navId {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
